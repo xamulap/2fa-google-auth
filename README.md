@@ -24,7 +24,7 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/ma
 
 ### Install package
 
-    curl https://raw.githubusercontent.com/xamulap/2fa-google-auth/develop/2fa-google-auth.deb
+    curl https://github.com/xamulap/2fa-google-auth/raw/main/2fa-google-auth.deb
     dpkg -i 2fa-google-auth.deb
 
 
