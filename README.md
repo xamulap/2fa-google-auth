@@ -1,10 +1,17 @@
 # Two-Factor Google Authenticator 
 
-Turn key solution for two factor authentication using Google Authenticator Time-based One-time Password (TOTP), Freeradius and PAM. 
-Developed on Debian 11. 
-Tested with Windows Server 2012R2 and Nethserver Samba AD
+Turn key solution for two factor authentication using Google Authenticator Time-based One-time Password (TOTP), Freeradius and Google authenticator PAM module.  
+
+Provides simple way how to use two factor authentication with any compatible one time password app.
 
 ![workflow](https://github.com/xamulap/2fa-google-auth/blob/main/pics/2fa.png?raw=true)
+
+Simple web gui for users enrolment.
+
+![gui](https://raw.githubusercontent.com/xamulap/2fa-google-auth/main/pics/2fa_web.png)
+
+Package for Debian 11. Tested with Windows Server 2012R2 and Nethserver Samba AD
+
 
 ## Installation
 
