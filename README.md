@@ -4,6 +4,8 @@ Turn key solution for two factor authentication using Google Authenticator Time-
 Developed on Debian 11. 
 Tested with Windows Server 2012R2 and Nethserver Samba AD
 
+![workflow](https://github.com/xamulap/2fa-google-auth/blob/main/pics/2fa.png?raw=true)
+
 ## Installation
 
 Prerequisite for automated installation is joining AD domain. 
@@ -24,13 +26,13 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/ma
 
 ### Install package
 
-    curl https://github.com/xamulap/2fa-google-auth/raw/main/2fa-google-auth.deb
+    wget https://github.com/xamulap/2fa-google-auth/raw/main/2fa-google-auth.deb
     dpkg -i 2fa-google-auth.deb
 
 
 ## Usage
 
-With web browser open http://<your IP>/2fa
+With web browser open https://your_IP/2fa
 Username: admin
 Password: admin
 
