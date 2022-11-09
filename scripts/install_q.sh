@@ -36,4 +36,9 @@ else
 
 fi
 
+#reload services
+systemctl restart sssd
+systemctl restart freeradius
+systemctl restart sshd
+
 exit 0
