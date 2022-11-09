@@ -1,3 +1,5 @@
+#####sssd
+
 check=`cat /etc/sssd/sssd.conf | grep -v "#" |  grep "use_fully_qualified_names = True"`
 if [ "$check" != "" ] && [ "$check" == "use_fully_qualified_names = True" ]; then
         echo "use_fully_qualified_names already updated"

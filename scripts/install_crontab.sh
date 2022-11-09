@@ -1,3 +1,5 @@
+######crontab
+
 check=`crontab -l -u freerad | grep 2fa | awk '{ print $8 }' | head -1`
 if [ "$check" != "" ] && [ "$check" == "/opt/2fa/bin/2faworker.php" ]; then
         echo "crontab already updated"

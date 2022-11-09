@@ -1,3 +1,5 @@
+#####final
+
 FILE=/etc/2fa.conf
 
 if [ -f "$FILE" ]; then
@@ -34,4 +36,4 @@ else
 
 fi
 
-
+exit 0

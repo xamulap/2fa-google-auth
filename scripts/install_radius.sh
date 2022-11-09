@@ -1,4 +1,6 @@
-dir /etc/freeradius/users
+######### radius
+
+mkdir /etc/freeradius/users
 chown freerad:freerad /etc/freeradius/users
 ln -s /etc/freeradius/3.0/mods-available/pam /etc/freeradius/3.0/mods-enabled/pam
 
