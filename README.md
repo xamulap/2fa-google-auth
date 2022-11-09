@@ -4,6 +4,11 @@ Turn key solution for two factor authentication using Google Authenticator Time-
 Developed on Debian 11. 
 Tested with Windows Server 2012R2 and Nethserver Samba AD
 
+Example of workflow. In example is for Radius Client use VPN.
+
+![workflow](https://raw.githubusercontent.com/xamulap/2fa-google-auth/main/pics/2fa.png)
+
+
 ## Installation
 
 Prerequisite for automated installation is joining AD domain. 
