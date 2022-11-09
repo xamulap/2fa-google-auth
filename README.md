@@ -70,5 +70,7 @@ To disable SSH access 2FA server for users set in /etc/sssd/sssd.conf
 
     override_shell = /usr/sbin/nologin
 
+Its higly recommended not to use server with public IP or in general with access from public internet. 
+
 
 
