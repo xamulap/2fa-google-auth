@@ -25,6 +25,7 @@ $sql="select * from users where status=2 or status=0";
 $res = $conn->query($sql);
 while($row = $res->fetch_assoc()) { 
 
+	var_dump($row);
 	$username=$row['username'];
 	$folder = "/etc/freeradius/users/".$username;
         $file = $folder."/.google_authenticator";

@@ -42,4 +42,9 @@ systemctl restart sssd
 systemctl restart freeradius
 systemctl restart sshd
 
+##reinstall cleanup
+
+rm /tmp/2faworker
+
+chown freerad /etc/2fa.conf
 exit 0

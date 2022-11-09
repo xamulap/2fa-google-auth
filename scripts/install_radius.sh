@@ -71,5 +71,21 @@ else
 fi
 
 
+cat >/etc/pam.d/radiusd <<EOL
+#
+# /etc/pam.d/radiusd - PAM configuration for FreeRADIUS
+#
 
+# We fall back to the system default in /etc/pam.d/common-*
+#
+
+auth requisite pam_google_authenticator.so forward_pass secret=/etc/freeradius/users/\${USER}/.google_authenticator user=freerad debug allow_readonly
+auth required pam_sss.so use_first_pass
+
+#for test local raduser
+#@include common-auth
+#@include common-account
+#@include common-password
+#@include common-session
+EOL
 
