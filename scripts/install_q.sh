@@ -23,6 +23,7 @@ else
 	###create db for fardius
 
 	mysql -e "CREATE DATABASE radius;"
+	mysql -e "DROP USER 'radius'@'localhost';"
         mysql -e "CREATE USER 'radius'@'localhost' IDENTIFIED BY '$pwd';"
 	mysql -e "GRANT ALL ON radius.* TO radius@localhost IDENTIFIED BY '$pwd';"
 	mysql -e "FLUSH PRIVILEGES;"
